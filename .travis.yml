@@ -14,8 +14,8 @@ deploy:
   app: docker-react-frontend
   env: DockerReactFrontend-env
   bucket: elasticbeanstalk-us-east-1-368373932282
+  bucket-path: docker-react-frontend
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: $AWS_SECRET_KEY
+  secret_access_key: $AWS_SECRET_KEY
